@@ -14,7 +14,7 @@ function fetchIssues() {
         let severity = issues[i].severity
         let assignedTo = issues[i].assignedTo
         let status = issues[i].status
-        let statusColor = status == "Closed" ? 'label-success' : 'label-info'
+        let statusColor = status == "Closed" ? 'label-default' : 'label-info'
 
         issuesList.innerHTML +=
         '<div class="well">' +
@@ -69,7 +69,7 @@ function setStatusClosed(id) {
     let issues = JSON.parse(localStorage.getItem('issues'))
     for(let i = 0; i < issues.length; i++) {
         if(issues[i].id === id){
-            issues[i].status = "Closed"
+            issues[i].status = "Closed" 
         }
     }
 
