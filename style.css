@@ -3,14 +3,13 @@ body {
     padding: auto;
     margin: auto;
     background: conic-gradient(from 90deg at 1px 1px,#0000 90deg,brown 0) 0 0/50px 50px;
-    
     background-position: center;
 }
 
 section.jumbotron {
     align-content: center;
     margin: auto;
-    max-width: 80%;
+    max-width: 90%;
     margin-bottom: 20px;
 }
 
@@ -19,7 +18,7 @@ section.jumbotron h3 {
 }
 
 section.container {
-    background-color: rgb(105, 17, 17);
+    background-color: rgba(105, 17, 17, .93);
     padding: auto;
 }
 
@@ -29,7 +28,7 @@ section.row {
 }
 
 .jumbotron {
-    background-color: rgb(252, 250, 161);
+    background-color: rgb(135, 166, 170);
 }
 
 h1 {
@@ -50,11 +49,30 @@ span.label.label-info {
 }
 
 div.well {
-    border-radius: 5px;
     background-color: rgb(224, 193, 193);
     border: 1px solid red;
 }
 
 button {
     width: 75px;
+}
+
+button.btn.btn-info {
+    background-color: rgb(53, 90, 143);
+}
+
+.glyphicon-time {
+    font-size: 25px;
+}
+
+.glyphicon-user {
+    font-size: 25px;
+}
+
+.hidden {
+    display: none
+}
+
+@media all {
+    
 }
