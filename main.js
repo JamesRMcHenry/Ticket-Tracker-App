@@ -1,4 +1,4 @@
-document.getElementById('issueInputForm').addEventListener('submit',saveIssue)
+document.getElementById('issueInputForm').addEventListener('submit', saveIssue)
 
 function fetchIssues() {
     let issues = JSON.parse(localStorage.getItem('issues'))
@@ -24,7 +24,7 @@ function fetchIssues() {
         '<p>' + description + '</p>' + 
         '<p><span class="glyphicon glyphicon-time"></span>' + severity + ' ' +
         '<span class="glyphicon glyphicon-user"></span>' + assignedTo + '</p>' +
-        '<a href="#" class="btn btn-warning" onclick="setStatusClosed(\''+id+'\') ">Close</a> ' +
+        '<a href="#" class="btn btn-warning in-valid" onclick="setStatusClosed(\''+id+'\') ">Close</a> ' +
         '<a href="#" class="btn btn-danger" onclick="deleteIssue(\''+id+'\') ">Delete</a> ' +
         '</div>'
     }

@@ -28,7 +28,7 @@ section.row {
 }
 
 .jumbotron {
-    background-color: rgb(135, 166, 170);
+    background-color: rgba(135, 166, 170, .8);
 }
 
 h1 {
@@ -49,7 +49,7 @@ span.label.label-info {
 }
 
 div.well {
-    background-color: rgb(224, 193, 193);
+    background-color: rgba(224, 193, 193, .7);
     border: 1px solid red;
 }
 
