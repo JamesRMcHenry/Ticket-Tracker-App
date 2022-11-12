@@ -1,1 +1,1 @@
-Simple and slightly customized Ticket Tracker Application.
+Functional and customized (local storage) Ticket-Tracker App using Bootstrap, HTML, CSS, and Javascript.

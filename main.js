@@ -15,6 +15,7 @@ function fetchIssues() {
         let assignedTo = issues[i].assignedTo
         let status = issues[i].status
         let statusColor = status == "Closed" ? 'label-default' : 'label-info'
+        let statusButtonClassName = status == "Closed" ? 'hidden' : ''
 
         issuesList.innerHTML +=
         '<div class="well">' +
@@ -24,7 +25,7 @@ function fetchIssues() {
         '<p>' + description + '</p>' + 
         '<p><span class="glyphicon glyphicon-time"></span>' + severity + ' ' +
         '<span class="glyphicon glyphicon-user"></span>' + assignedTo + '</p>' +
-        '<a href="#" class="btn btn-warning in-valid" onclick="setStatusClosed(\''+id+'\') ">Close</a> ' +
+        '<a href="#" class="btn btn-warning in-valid ' + statusButtonClassName + '" onclick="setStatusClosed(\''+id+'\') ">Close</a> ' +
         '<a href="#" class="btn btn-danger" onclick="deleteIssue(\''+id+'\') ">Delete</a> ' +
         '</div>'
     }
